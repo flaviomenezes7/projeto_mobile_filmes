@@ -1,4 +1,3 @@
-// src/components/SearchBar.jsx
 import React, { useState } from 'react';
 
 const SearchBar = ({ onSearch }) => {
@@ -26,13 +25,13 @@ const SearchBar = ({ onSearch }) => {
           value={query}
           onChange={handleChange}
           placeholder="Buscar filmes..."
-          className="w-full pl-4 pr-10 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          className="w-full pl-4 pr-10 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200"
         />
         {query && (
           <button
             type="button"
             onClick={handleClear}
-            className="absolute right-10 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700"
+            className="absolute right-10 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700 transition-colors duration-200"
             aria-label="Clear search"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -42,7 +41,7 @@ const SearchBar = ({ onSearch }) => {
         )}
         <button
           type="submit"
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 text-blue-600 hover:text-blue-800"
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 text-blue-600 hover:text-blue-800 transition-colors duration-200"
           aria-label="Search"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
